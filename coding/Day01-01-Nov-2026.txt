@@ -1,0 +1,22 @@
+
+Day 1: 1 Nov,2026
+#Ansible task - Install Nginx on Pathnex Serve
+
+- Name: Install Nginx on Pathnex Server
+  Hosts: all
+  Become: yes
+
+  Tasks:
+     -name: Install Nginx
+      yum:
+	name: nginx
+	state: present
+
+
+  docker--version
+  docker run ubuntu echo "Hello Pathnex"
+
+
+  From ubuntu:22.04
+  CMD ["echo", "Hello Pathnex"]
+
